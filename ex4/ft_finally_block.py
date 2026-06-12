@@ -35,7 +35,7 @@ def test_watering_system() -> None:
     invalid = ["Tomato", "lettuce"]
     try:
         print("Opening watering system")
-        for plant in valid:
+        for plant in invalid:
             water_plant(plant)
     except PlantError as e:
         print(f"Caught {e.__class__.__name__}: {e}")
