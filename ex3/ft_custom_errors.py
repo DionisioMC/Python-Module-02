@@ -14,7 +14,7 @@ class WaterError(GardenError):
 
 
 def testing_PlantError(is_healthy: bool) -> None:
-    if is_healthy == False:
+    if is_healthy is False:
         raise PlantError("The tomato plant is wilting!")
 
 
